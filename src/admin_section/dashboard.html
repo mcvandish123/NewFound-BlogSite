@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin | Personal Blog</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <main class="page admin-page">
+    <div class="header">
+      <h1>Personal Blog</h1>
+      <a class="add-link" href="/new">+ Add</a>
+    </div>
+
+    <!-- Filled in dynamically. Each item should look like:
+      <li>
+        <span class="title">Article title</span>
+        <div class="actions">
+          <a href="/edit/ID">Edit</a>
+          <form action="/delete/ID" method="POST"><button type="submit">Delete</button></form>
+        </div>
+      </li>
+    -->
+    <ul class="article-list" id="article-list"></ul>
+  </main>
+</body>
+</html>

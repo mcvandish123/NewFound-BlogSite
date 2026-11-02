@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Update Article | Personal Blog</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <main class="page">
+    <h1>Update Article</h1>
+
+    <!-- Set the form action (/edit/ID) and field values dynamically -->
+    <form class="article-form" id="edit-form" action="" method="POST">
+      <input type="text" id="title" name="title" placeholder="Article Title" required>
+      <input type="date" id="date" name="date" aria-label="Publishing Date" required>
+      <textarea id="content" name="content" placeholder="Content" required></textarea>
+      <button class="btn" type="submit">Update</button>
+    </form>
+  </main>
+</body>
+</html>

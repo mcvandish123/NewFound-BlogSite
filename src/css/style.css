@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: #f8f9fb;
+  color: #1a1a1a;
+  line-height: 1.6;
+  padding: 40px 16px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Card container shared by every page */
+.page {
+  max-width: 720px;
+  margin: 0 auto;
+  background: #fff;
+  border: 2px solid #1a1a1a;
+  border-radius: 8px;
+  padding: 32px;
+}
+
+.page h1 {
+  font-size: 2rem;
+  margin-bottom: 24px;
+}
+
+/* ---------- Article list (home + admin) ---------- */
+.article-list {
+  list-style: none;
+}
+
+.article-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 10px 0;
+}
+
+.article-list .title {
+  font-weight: 600;
+}
+
+.article-list a.title:hover {
+  text-decoration: underline;
+}
+
+.muted {
+  color: #8a8f98;
+}
+
+/* ---------- Single article ---------- */
+.article-date {
+  font-weight: 600;
+  margin-top: -16px;
+  margin-bottom: 16px;
+}
+
+.article-content {
+  white-space: pre-line;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 24px;
+  color: #8a8f98;
+}
+
+.back-link:hover {
+  color: #1a1a1a;
+}
+
+/* ---------- Admin dashboard ---------- */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.header h1 {
+  margin-bottom: 0;
+}
+
+.add-link {
+  font-weight: 600;
+}
+
+.actions {
+  display: flex;
+  gap: 16px;
+  flex-shrink: 0;
+}
+
+.actions a,
+.actions button {
+  color: #8a8f98;
+  font: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.actions a:hover {
+  color: #1a1a1a;
+}
+
+.actions button:hover {
+  color: #c62828;
+}
+
+.actions form {
+  display: inline;
+}
+
+/* ---------- Forms (new / edit) ---------- */
+.article-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.article-form input,
+.article-form textarea {
+  width: 100%;
+  font: inherit;
+  padding: 10px 12px;
+  border: 2px solid #1a1a1a;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.article-form textarea {
+  min-height: 300px;
+  resize: vertical;
+}
+
+.article-form input:focus,
+.article-form textarea:focus {
+  outline: none;
+  border-color: #3b6fd8;
+}
+
+.btn {
+  align-self: flex-start;
+  margin-top: 8px;
+  font: inherit;
+  font-weight: 600;
+  padding: 8px 32px;
+  border: 2px solid #1a1a1a;
+  border-radius: 6px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #1a1a1a;
+  color: #fff;
+}
+
+@media (max-width: 480px) {
+  .page {
+    padding: 20px;
+  }
+
+  .article-list li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+  }
+}
